@@ -1,10 +1,13 @@
-def myfun(x,y):
-   if(x=='a' and y=='b'):
+def myfun(source,dest):
+   if(source=='tvk' and dest=='venus'):
        print("the bill amt is 100")
-   elif(x=='a' and y=='c'):
+   elif(source=='tvk' and dest=='perambur'):
        print("the bill amt is 300")
-   elif(x=='b' and x=='c'):
+   elif(source=='venus' and dest=='perambur'):
         print("the bill amt is 150")
    
 
-n=myfun('a','c')
+source=raw_input("enter the source")
+dest=raw_input("enter the destination")
+n=myfun(source,dest)
+
